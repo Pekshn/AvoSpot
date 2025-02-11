@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct AvoSpotApp: App {
+    
+    //MARK: - Body
     var body: some Scene {
         WindowGroup {
             ContentView()
