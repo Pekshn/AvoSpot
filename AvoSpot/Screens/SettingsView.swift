@@ -16,7 +16,6 @@ struct SettingsView: View {
         VStack {
             Text("HelloWorld")
         }
-        .padding()
     }
 }
 
@@ -24,7 +23,5 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
-            .previewLayout(.sizeThatFits)
-            .padding()
     }
 }

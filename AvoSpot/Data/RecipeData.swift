@@ -8,7 +8,7 @@
 import SwiftUI
 
 //MARK: - Recipes data
-let recipesData: [Recipe] = [
+let recipeData: [Recipe] = [
     Recipe(title: "Avocado Crostini", headline: "Colourful twist on a classic.",
            image: "avocado-crostini", rating: 5, serves: 4, preparation: 20, cooking: 0, instructions: [
             "In a small jar, add the olive oil, lemon juice, salt, pepper and the stalks of the parsely. Closed the lid and shake until combined into an almost creamy texture.",

@@ -18,25 +18,26 @@ struct AppView: View {
                 .tabItem {
                     Image("tabicon-branch")
                     Text("Avocados")
-                }
-            ContentView()
+                } //: tabItem
+            
+            RecipesView()
                 .tabItem {
                     Image("tabicon-book")
                     Text("Recipes")
-                }
+                } //: tabItem
             
             RipeningStagesView()
                 .tabItem {
                     Image("tabicon-avocado")
                     Text("Ripening")
-                }
+                } //: tabItem
             
             SettingsView()
                 .tabItem {
                     Image("tabicon-settings")
                     Text("Settings")
-                }
-        }
+                } //: tabItem
+        } //: TabView
         .edgesIgnoringSafeArea(.all)
         .accentColor(.primary)
     }
@@ -46,7 +47,5 @@ struct AppView: View {
 struct AppView_Previews: PreviewProvider {
     static var previews: some View {
         AppView()
-            .previewLayout(.sizeThatFits)
-            .padding()
     }
 }
