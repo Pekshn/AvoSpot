@@ -50,7 +50,7 @@ struct AvocadosView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
         ) //: background
-        .edgesIgnoringSafeArea(.all)
+        .ignoresSafeArea(.all, edges: .all)
         .onAppear {
             withAnimation {
                 pulseAnimation.toggle()

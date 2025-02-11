@@ -38,7 +38,7 @@ struct AppView: View {
                     Text("Settings")
                 } //: tabItem
         } //: TabView
-        .edgesIgnoringSafeArea(.all)
+        .ignoresSafeArea(.all, edges: .all)
         .accentColor(.primary)
     }
 }

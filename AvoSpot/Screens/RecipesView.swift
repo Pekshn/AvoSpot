@@ -81,7 +81,7 @@ struct RecipesView: View {
                 .padding(.bottom, 85)
             } //: VStack
         } //: ScrollView
-        .edgesIgnoringSafeArea(.all)
+        .ignoresSafeArea(.all, edges: .all)
         .padding(0)
     }
 }
