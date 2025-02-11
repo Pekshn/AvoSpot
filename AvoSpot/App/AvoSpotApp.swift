@@ -13,7 +13,7 @@ struct AvoSpotApp: App {
     //MARK: - Body
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView()
         }
     }
 }

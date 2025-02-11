@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AvocadosView.swift
 //  AvoSpot
 //
 //  Created by Petar  on 11.2.25..
@@ -7,22 +7,24 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AvocadosView: View {
     
     //MARK: - Properties
     
     //MARK: - Body
     var body: some View {
         VStack {
-            Text("Avocado Recipes")
+            Text("Avocados")
         }
         .padding()
     }
 }
 
 //MARK: - Preview
-struct ContentView_Previews: PreviewProvider {
+struct AvocadosView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AvocadosView()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

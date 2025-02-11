@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RipeningStagesView.swift
 //  AvoSpot
 //
 //  Created by Petar  on 11.2.25..
@@ -7,22 +7,24 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RipeningStagesView: View {
     
     //MARK: - Properties
     
     //MARK: - Body
     var body: some View {
         VStack {
-            Text("Avocado Recipes")
+            Text("Ripening stages")
         }
         .padding()
     }
 }
 
 //MARK: - Preview
-struct ContentView_Previews: PreviewProvider {
+struct RipeningStagesView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RipeningStagesView()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
