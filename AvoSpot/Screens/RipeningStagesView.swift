@@ -10,6 +10,7 @@ import SwiftUI
 struct RipeningStagesView: View {
     
     //MARK: - Properties
+    @State private var ripeningViewID = UUID()
     var ripeningStages = ripeningData
     
     //MARK: - Body
@@ -21,6 +22,7 @@ struct RipeningStagesView: View {
                 HStack(alignment: .center, spacing: 25) {
                     ForEach(ripeningStages) { ripening in
                         RipeningView(ripening: ripening)
+                            .id(ripeningViewID)
                     } //: ForEach
                 } //: HStack
                 .padding(.vertical)
@@ -29,6 +31,9 @@ struct RipeningStagesView: View {
                 Spacer()
             } //: VStack
         } //: ScrollView
+        .onAppear {
+            ripeningViewID = UUID()
+        } //: onAppear
         .ignoresSafeArea(.all, edges: .all)
     }
 }

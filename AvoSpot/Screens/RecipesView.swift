@@ -10,6 +10,7 @@ import SwiftUI
 struct RecipesView: View {
     
     //MARK: - Properties
+    @State private var headerViewID = UUID()
     var headers = headerData
     var facts = factData
     var recepies = recipeData
@@ -23,6 +24,7 @@ struct RecipesView: View {
                     HStack(alignment: .top, spacing: 0) {
                         ForEach(headers) { header in
                             HeaderView(header: header)
+                                .id(headerViewID)
                         } //: ForEach
                     } //: HStack
                 } //: ScrollView
@@ -83,6 +85,9 @@ struct RecipesView: View {
         } //: ScrollView
         .ignoresSafeArea(.all, edges: .all)
         .padding(0)
+        .onAppear {
+            headerViewID = UUID()
+        } //: onAppear
     }
 }
 
