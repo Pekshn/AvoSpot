@@ -9,52 +9,19 @@ import SwiftUI
 
 struct DishesView: View {
     
-    //MARK: - Properties
-    
     //MARK: - Body
     var body: some View {
         HStack(alignment: .center, spacing: 4) {
             VStack(alignment: .leading, spacing: 4) {
-                HStack {
-                    Image(Constants.iconToasts)
-                        .resizable()
-                        .modifier(IconModifier())
-                    
-                    Spacer()
-                    
-                    Text(Localization.toasts)
-                }
-                Divider()
-                HStack {
-                    Image(Constants.iconTacos)
-                        .resizable()
-                        .modifier(IconModifier())
-                    
-                    Spacer()
-                    
-                    Text(Localization.tacos)
-                }
-                Divider()
-                HStack {
-                    Image(Constants.iconSalads)
-                        .resizable()
-                        .modifier(IconModifier())
-                    
-                    Spacer()
-                    
-                    Text(Localization.salads)
-                }
-                Divider()
-                HStack {
-                    Image(Constants.iconHalfavo)
-                        .resizable()
-                        .modifier(IconModifier())
-                    
-                    Spacer()
-                    
-                    Text(Localization.spreads)
-                }
-            }
+                DishItemView(title: Localization.toasts, imageName: Constants.iconToasts,
+                             leftSided: false, hasDivider: true)
+                DishItemView(title: Localization.tacos, imageName: Constants.iconTacos,
+                             leftSided: false, hasDivider: true)
+                DishItemView(title: Localization.salads, imageName: Constants.iconSalads,
+                             leftSided: false, hasDivider: true)
+                DishItemView(title: Localization.spreads, imageName: Constants.iconHalfavo,
+                             leftSided: false, hasDivider: false)
+            } //: VStack
             
             VStack(alignment: .center, spacing: 16) {
                 HStack {
@@ -66,53 +33,18 @@ struct DishesView: View {
                 HStack {
                     Divider()
                 }
-            }
+            } //: VStack
             
             VStack(alignment: .trailing, spacing: 4) {
-                HStack {
-                    Text(Localization.guacamole)
-                    
-                    Spacer()
-                    
-                    Image(Constants.iconGuacamole)
-                        .resizable()
-                        .modifier(IconModifier())
-                    
-                }
-                Divider()
-                HStack {
-                    Text(Localization.sandwiches)
-                    
-                    Spacer()
-                    
-                    Image(Constants.iconSandwiches)
-                        .resizable()
-                        .modifier(IconModifier())
-                    
-                }
-                Divider()
-                HStack {
-                    Text(Localization.soup)
-                    
-                    Spacer()
-                    
-                    Image(Constants.iconSoup)
-                        .resizable()
-                        .modifier(IconModifier())
-                    
-                }
-                Divider()
-                HStack {
-                    Text(Localization.smoothies)
-                    
-                    Spacer()
-                    
-                    Image(Constants.iconSmoothies)
-                        .resizable()
-                        .modifier(IconModifier())
-                    
-                }
-            }
+                DishItemView(title: Localization.guacamole, imageName: Constants.iconGuacamole,
+                             leftSided: true, hasDivider: true)
+                DishItemView(title: Localization.sandwiches, imageName: Constants.iconSandwiches,
+                             leftSided: true, hasDivider: true)
+                DishItemView(title: Localization.soup, imageName: Constants.iconSoup,
+                             leftSided: true, hasDivider: true)
+                DishItemView(title: Localization.smoothies, imageName: Constants.iconSmoothies,
+                             leftSided: true, hasDivider: false)
+            } //: VStack
         } //: HStack
         .font(.system(.callout, design: .serif))
         .foregroundStyle(.gray)
