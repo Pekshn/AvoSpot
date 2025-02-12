@@ -10,7 +10,7 @@ AvoSpot iOS app covering:
   -  Haptic Feedback – Precise and responsive vibration effects.
   -  Localization – Supporting multiple languages with Localizable.strings.
 
-📌 Note: No external dependencies – Just download and build.
+📌 Note: No external dependencies – Just download and run.
 
 📸 Screenshots
 
