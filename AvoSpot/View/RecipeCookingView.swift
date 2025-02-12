@@ -16,16 +16,16 @@ struct RecipeCookingView: View {
     var body: some View {
         HStack(alignment: .center, spacing: 12) {
             HStack(alignment: .center, spacing: 2) {
-                Image(systemName: "person.2")
-                Text("Serves: \(recipe.serves)")
+                Image(systemName: Constants.systemPerson2)
+                Text(String(format: Localization.servesX, recipe.serves))
             } //: HStack
             HStack(alignment: .center, spacing: 2) {
-                Image(systemName: "clock")
-                Text("Prep: \(recipe.preparation)")
+                Image(systemName: Constants.systemClock)
+                Text(String(format: Localization.prepX, recipe.preparation))
             } //: HStack
             HStack(alignment: .center, spacing: 2) {
-                Image(systemName: "flame")
-                Text("Cooking: \(recipe.cooking)")
+                Image(systemName: Constants.systemFlame)
+                Text(String(format: Localization.cookingX, recipe.cooking))
             } //: HStack
         } //: HStack
         .font(.footnote)

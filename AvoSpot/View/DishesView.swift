@@ -16,43 +16,43 @@ struct DishesView: View {
         HStack(alignment: .center, spacing: 4) {
             VStack(alignment: .leading, spacing: 4) {
                 HStack {
-                    Image("icon-toasts")
+                    Image(Constants.iconToasts)
                         .resizable()
                         .modifier(IconModifier())
                     
                     Spacer()
                     
-                    Text("Toasts")
+                    Text(Localization.toasts)
                 }
                 Divider()
                 HStack {
-                    Image("icon-tacos")
+                    Image(Constants.iconTacos)
                         .resizable()
                         .modifier(IconModifier())
                     
                     Spacer()
                     
-                    Text("Tacos")
+                    Text(Localization.tacos)
                 }
                 Divider()
                 HStack {
-                    Image("icon-salads")
+                    Image(Constants.iconSalads)
                         .resizable()
                         .modifier(IconModifier())
                     
                     Spacer()
                     
-                    Text("Salads")
+                    Text(Localization.salads)
                 }
                 Divider()
                 HStack {
-                    Image("icon-halfavo")
+                    Image(Constants.iconHalfavo)
                         .resizable()
                         .modifier(IconModifier())
                     
                     Spacer()
                     
-                    Text("Spreads")
+                    Text(Localization.spreads)
                 }
             }
             
@@ -60,7 +60,7 @@ struct DishesView: View {
                 HStack {
                     Divider()
                 }
-                Image(systemName: "heart.circle")
+                Image(systemName: Constants.systemHeartCircle)
                     .font(.title.weight(.ultraLight))
                     .imageScale(.large)
                 HStack {
@@ -70,44 +70,44 @@ struct DishesView: View {
             
             VStack(alignment: .trailing, spacing: 4) {
                 HStack {
-                    Text("Guacamole")
+                    Text(Localization.guacamole)
                     
                     Spacer()
                     
-                    Image("icon-guacamole")
+                    Image(Constants.iconGuacamole)
                         .resizable()
                         .modifier(IconModifier())
                     
                 }
                 Divider()
                 HStack {
-                    Text("Sandwiches")
+                    Text(Localization.sandwiches)
                     
                     Spacer()
                     
-                    Image("icon-sandwiches")
+                    Image(Constants.iconSandwiches)
                         .resizable()
                         .modifier(IconModifier())
                     
                 }
                 Divider()
                 HStack {
-                    Text("Soup")
+                    Text(Localization.soup)
                     
                     Spacer()
                     
-                    Image("icon-soup")
+                    Image(Constants.iconSoup)
                         .resizable()
                         .modifier(IconModifier())
                     
                 }
                 Divider()
                 HStack {
-                    Text("Smoothies")
+                    Text(Localization.smoothies)
                     
                     Spacer()
                     
-                    Image("icon-smoothies")
+                    Image(Constants.iconSmoothies)
                         .resizable()
                         .modifier(IconModifier())
                     

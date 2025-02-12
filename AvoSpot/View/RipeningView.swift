@@ -40,7 +40,7 @@ struct RipeningView: View {
                         .font(.system(.largeTitle, design: .serif))
                         .fontWeight(.bold)
                     
-                    Text("STAGE")
+                    Text(Localization.stage.uppercased())
                         .font(.system(.body, design: .serif))
                         .fontWeight(.heavy)
                 } //: VStack

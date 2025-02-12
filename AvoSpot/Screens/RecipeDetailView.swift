@@ -23,7 +23,6 @@ struct RecipeDetailView: View {
                     .scaledToFit()
                 
                 Group {
-                    //Title
                     Text(recipe.title)
                         .font(.system(.largeTitle, design: .serif))
                         .fontWeight(.bold)
@@ -31,14 +30,11 @@ struct RecipeDetailView: View {
                         .foregroundColor(.colorGreenAdaptive)
                         .padding(.top, 10)
                     
-                    //Ratings
                     RecipeRatingView(recipe: recipe)
                     
-                    //Cooking
                     RecipeCookingView(recipe: recipe)
                     
-                    //Ingredients
-                    Text("Ingredients")
+                    Text(Localization.ingredients)
                         .fontWeight(.bold)
                         .modifier(TitleModifier())
                     
@@ -53,14 +49,13 @@ struct RecipeDetailView: View {
                         } //: ForEach
                     } //: VStack
                     
-                    //Instructions
-                    Text("Instructions")
+                    Text(Localization.instructions)
                         .fontWeight(.bold)
                         .modifier(TitleModifier())
                     
                     ForEach(recipe.instructions, id: \.self) { instrucion in
                         VStack(alignment: .center, spacing: 5) {
-                            Image(systemName: "chevron.down.circle")
+                            Image(systemName: Constants.systemChevronDownCircle)
                                 .resizable()
                                 .frame(width: 42, height: 42, alignment: .center)
                                 .imageScale(.large)
@@ -88,7 +83,7 @@ struct RecipeDetailView: View {
                     Button {
                         presentationMode.wrappedValue.dismiss()
                     } label: {
-                        Image(systemName: "chevron.down.circle.fill")
+                        Image(systemName: Constants.systemChevronDownCircle)
                             .font(.title)
                             .foregroundColor(.white)
                             .shadow(radius: 4)

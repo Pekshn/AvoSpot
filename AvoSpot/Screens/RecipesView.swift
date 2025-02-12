@@ -30,7 +30,7 @@ struct RecipesView: View {
                 } //: ScrollView
                 
                 //MARK: - Dishes View
-                Text("Avocado Dishes")
+                Text(Localization.avocadoDishes)
                     .fontWeight(.bold)
                     .modifier(TitleModifier())
                 
@@ -38,7 +38,7 @@ struct RecipesView: View {
                     .frame(maxWidth: 640)
                 
                 //MARK: - Avocato facts
-                Text("Avocado Facts")
+                Text(Localization.avocadoFacts)
                     .fontWeight(.bold)
                     .modifier(TitleModifier())
                 
@@ -54,7 +54,7 @@ struct RecipesView: View {
                 } //: ScrollView
                 
                 //MARK: - Recipe Cards
-                Text("Avocado Recipes")
+                Text(Localization.avocadoRecipes)
                     .fontWeight(.bold)
                     .modifier(TitleModifier())
                 
@@ -68,12 +68,12 @@ struct RecipesView: View {
                 
                 //MARK: - Footer
                 VStack(alignment: .center, spacing: 20) {
-                    Text("All About Avocados")
+                    Text(Localization.allAboutAvocados)
                         .fontWeight(.bold)
                         .modifier(TitleModifier())
                         .frame(minHeight: 60)
                     
-                    Text("Everything you wanted to know about avocados but were too afraid to ask")
+                    Text(Localization.everythingYouWantedInfo)
                         .font(.system(.body, design: .serif))
                         .multilineTextAlignment(.center)
                         .foregroundColor(.gray)

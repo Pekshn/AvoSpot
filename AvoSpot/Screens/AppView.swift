@@ -16,26 +16,26 @@ struct AppView: View {
         TabView {
             AvocadosView()
                 .tabItem {
-                    Image("tabicon-branch")
-                    Text("Avocados")
+                    Image(Constants.tabiconBranch)
+                    Text(Localization.avocados)
                 } //: tabItem
             
             RecipesView()
                 .tabItem {
-                    Image("tabicon-book")
-                    Text("Recipes")
+                    Image(Constants.tabiconBook)
+                    Text(Localization.recipes)
                 } //: tabItem
             
             RipeningStagesView()
                 .tabItem {
-                    Image("tabicon-avocado")
-                    Text("Ripening")
+                    Image(Constants.tabiconAvocado)
+                    Text(Localization.ripening)
                 } //: tabItem
             
             SettingsView()
                 .tabItem {
-                    Image("tabicon-settings")
-                    Text("Settings")
+                    Image(Constants.tabiconSettings)
+                    Text(Localization.settings)
                 } //: tabItem
         } //: TabView
         .ignoresSafeArea(.all, edges: .all)

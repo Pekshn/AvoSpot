@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  AvoSpot
+
+  Created by Petar  on 12.2.25..
+  
+*/
+
+"Avocados" = "Avocados";
+"Recipes" = "Recipes";
+"Ripening" = "Ripening";
+"Settings" = "Settings";
+"Creamy, green, and full of..." = "Creamy, green, and full of nutrients!\nAvocado is a powerhouse ingredient at any meal. Enjoy these handpicked avocado recipes for breakfast, lunch, dinner & more!";
+"Ingredients" = "Ingredients";
+"Instructions" = "Instructions";
+"Avocado Dishes" = "Avocado Dishes";
+"Avocado Facts" = "Avocado Facts";
+"Avocado Recipes" = "Avocado Recipes";
+"All About Avocados" = "All About Avocados";
+"Everything you wanted..." = "Everything you wanted to know about avocados but were too afraid to ask";
+"General Settings" = "General Settings";
+"Application" = "Application";
+"Product" = "Product";
+"Compatibility" = "Compatibility";
+"Developer" = "Developer";
+"Thanks to" = "Thanks to";
+"Version" = "Version";
+"Personal message" = "Personal message";
+"Display App info" = "Display App info";
+"Background refresh" = "Background refresh";
+"Avocado Recipes" = "Avocado Recipes";
+"iPhone & iPad" = "iPhone & iPad";
+"DeveloperValue" = "Petar";
+"ThanksToValue" = "Robert Petras";
+"1.0.0" = "1.0.0";
+"Happy coding!" = "Happy coding! 🎉";
+"Toasts" = "Toasts";
+"Tacos" = "Tacos";
+"Salads" = "Salads";
+"Spreads" = "Spreads";
+"Guacamole" = "Guacamole";
+"Sandwiches" = "Sandwiches";
+"Soup" = "Soup";
+"Smoothies" = "Smoothies";
+"Serves: x" = "Serves: %d";
+"Prep: x" = "Prep: %d";
+"Cooking: x" = "Cooking: %d";
+"Stage" = "Stage";

@@ -17,7 +17,7 @@ struct AvocadosView: View {
         VStack {
             Spacer()
             
-            Image("avocado")
+            Image(Constants.avocado)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 240, height: 240, alignment: .center)
@@ -27,13 +27,13 @@ struct AvocadosView: View {
                 .animation(.easeInOut(duration: 1.7).repeatForever(autoreverses: true), value: pulseAnimation)
             
             VStack {
-                Text("Avocados".uppercased())
+                Text(Localization.avocados.uppercased())
                     .font(.system(size: 42, weight: .bold, design: .serif))
                     .foregroundColor(.white)
                     .padding()
                     .shadow(color: .colorBlackTransparentDark, radius: 4, x: 0, y: 4)
                 
-                Text("Creamy, green, and full of nutrients!\nAvocado is a powerhouse ingredient at any meal. Enjoy these handpicked avocado recipes for breakfast, lunch, dinner & more!")
+                Text(Localization.creamyGreenInfo)
                 .lineLimit(nil)
                 .font(.system(.headline, design: .serif))
                 .foregroundColor(.colorGreenLight)
@@ -46,7 +46,7 @@ struct AvocadosView: View {
             Spacer()
         } //: VStack
         .background(
-            Image("background")
+            Image(Constants.background)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
         ) //: background

@@ -11,7 +11,6 @@ struct RecipeCardView: View {
     
     //MARK: - Properties
     var recipe: Recipe
-    var hapticImapct = UIImpactFeedbackGenerator(style: .heavy)
     @State private var showModal = false
     
     //MARK: - Body
@@ -24,7 +23,7 @@ struct RecipeCardView: View {
                     HStack {
                         Spacer()
                         VStack {
-                            Image(systemName: "bookmark")
+                            Image(systemName: Constants.systemBookmark)
                                 .font(.title.weight(.light))
                                 .foregroundColor(.white)
                                 .imageScale(.small)
@@ -64,7 +63,7 @@ struct RecipeCardView: View {
         .cornerRadius(12)
         .shadow(color: .colorBlackTransparentLight, radius: 8, x: 0, y: 0)
         .onTapGesture {
-            hapticImapct.impactOccurred()
+            Constants.feedback.impactOccurred()
             showModal = true
         } //: onTapGesture
         .sheet(isPresented: $showModal) {

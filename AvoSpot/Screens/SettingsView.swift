@@ -18,14 +18,14 @@ struct SettingsView: View {
         VStack(alignment: .center, spacing: 0) {
             //MARK: Header
             VStack(alignment: .center, spacing: 5) {
-                Image("avocado")
+                Image(Constants.avocado)
                     .resizable()
                     .scaledToFit()
                     .padding(.top)
                     .frame(width: 100, height: 100, alignment: .center)
                     .shadow(color: .colorBlackTransparentLight, radius: 8, x: 0, y: 4)
                 
-                Text("Avocados".uppercased())
+                Text(Localization.avocados.uppercased())
                     .font(.system(.title, design: .serif))
                     .fontWeight(.bold)
                     .foregroundColor(.colorGreenAdaptive)
@@ -33,20 +33,20 @@ struct SettingsView: View {
             .padding()
             
             Form {
-                Section(header: Text("General Settings")) {
-                    SettingsToggleView(enabled: $displayInfo, title: "Display App info")
-                    SettingsToggleView(enabled: $bgRefresh, title: "Background refresh")
+                Section(header: Text(Localization.generalSettings)) {
+                    SettingsToggleView(enabled: $displayInfo, title: Localization.displayAppInfo)
+                    SettingsToggleView(enabled: $bgRefresh, title: Localization.backgroundRefresh)
                 } //: Section
                 
-                Section(header: Text("Application")) {
+                Section(header: Text(Localization.application)) {
                     if displayInfo {
-                        SettingsTitleView(title: "Product", value: "Avocado Recipes")
-                        SettingsTitleView(title: "Compatibility", value: "iPhone & iPad")
-                        SettingsTitleView(title: "Developer", value: "Petar")
-                        SettingsTitleView(title: "Thanks to", value: "Robert Petras")
-                        SettingsTitleView(title: "Version", value: "1.0.0")
+                        SettingsTitleView(title: Localization.product, value: Localization.avocadoRecipes)
+                        SettingsTitleView(title: Localization.compatibility, value: Localization.iPhoneAndiPad)
+                        SettingsTitleView(title: Localization.developer, value: Localization.developerValue)
+                        SettingsTitleView(title: Localization.thanksTo, value: Localization.thanksToValue)
+                        SettingsTitleView(title: Localization.version, value: Localization.versionOne)
                     } else {
-                        SettingsTitleView(title: "Personal message", value: "Happy coding! 🎉")
+                        SettingsTitleView(title: Localization.personalMessage, value: Localization.happyCoding)
                     }
                 } //: Section
             } //: Form
